@@ -142,7 +142,7 @@ def find_best_threshold(real_scores, fake_scores):
 
 
 def parse_args():
-    parser = argparse.ArgumentParser(description="AI-generated image detection via DINOv2 energy scoring.")
+    parser = argparse.ArgumentParser()
 
     # Required
     parser.add_argument("--real", required=True, metavar="DIR",
