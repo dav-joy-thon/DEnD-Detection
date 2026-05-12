@@ -148,7 +148,7 @@ def parse_args():
     parser.add_argument("--real", required=True, metavar="DIR",
                         help="Directory of real images.")
     parser.add_argument("--fake", required=True, metavar="DIR",
-                        help="Directory of fake/generated images.")
+                        help="Directory of generated images.")
 
     # Model
     parser.add_argument("--model", default="dinov2_vitl14",
@@ -157,7 +157,7 @@ def parse_args():
     parser.add_argument("--batch-size", type=int, default=128,
                         help="Batch size (default: 128).")
     parser.add_argument("--temperature", type=float, default=0.6,
-                        help="Temperature for energy scoring (default: 0.6).")
+                        help="Temperature (default: 0.6).")
 
     # Random transformation
     parser.add_argument("--transform", default="gaussian_noise",
